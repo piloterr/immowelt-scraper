@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "https://www.immowelt.de/expose/65de0309-bf41-48ce-86fd-6a3441fd0487",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -592,7 +592,7 @@ response = requests.get(
     params={
         "query": "https://www.immowelt.de/suche/mieten/wohnung/deutschland/ad02de1",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
